@@ -10,7 +10,9 @@ jobs:
     
     steps:
       - name: Print hello actions
-        run: echo "Hello GithubActions"
+        run: |
+          echo "Hello GithubActions"
+          echo "Terstdddddd"
         
   test:
     runs-on: windows-latest
