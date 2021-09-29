@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Print hello actions
         run: echo "Hello GithubActions"
+        
+  test:
+    runs-on: [windows, ubuntu-latest]
+    steps:
+      - name: Test1
+        run: echo "Run on windows and ubuntu"
