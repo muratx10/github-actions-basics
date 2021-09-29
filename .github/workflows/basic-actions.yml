@@ -15,6 +15,9 @@ jobs:
         run: |
           echo "Hello GithubActions"
           echo "APP: ${{ env.APP }}"
+          echo "$LOCAL_ENV"
+        env:
+          LOCAL_ENV: "LOCAL ENV"
         
   test:
     runs-on: windows-latest
