@@ -12,12 +12,7 @@ jobs:
     
     steps:
       - name: Print hello actions
-        run: |
-          echo "Hello GithubActions"
-          echo "APP: ${{ env.APP }}"
-          echo "$LOCAL_ENV"
-        env:
-          LOCAL_ENV: "LOCAL ENV"
+        run: ls -la
         
   test:
     runs-on: windows-latest
@@ -25,3 +20,9 @@ jobs:
     steps:
       - name: Test1
         run: echo "Run on windows and ubuntu"
+        
+      - name: Clone repo
+        uses: actions/checkout@v1
+      
+      - name: List files
+        run: ls -la
