@@ -1,4 +1,6 @@
 name: CI
+env:
+  APP: "ihs"
 on:
   push:
     branches: [ main ]
@@ -12,7 +14,7 @@ jobs:
       - name: Print hello actions
         run: |
           echo "Hello GithubActions"
-          echo "Terstdddddd"
+          echo "APP: ${{ env.APP }}"
         
   test:
     runs-on: windows-latest
