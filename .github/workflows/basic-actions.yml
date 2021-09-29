@@ -8,7 +8,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestxx
     
     steps:
       - name: Print hello actions
