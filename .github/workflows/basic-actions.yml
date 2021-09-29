@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print hello actions
+        run: echo "Hello GithubActions"
